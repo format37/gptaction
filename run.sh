@@ -1,7 +1,7 @@
 uvicorn app:app \
     --port 8080 \
     --host 0.0.0.0 \
-    --ssl-certfile /etc/letsencrypt/live/rtlm.info/fullchain.pem \
-    --ssl-keyfile /etc/letsencrypt/live/rtlm.info/privkey.pem \
+    --ssl-certfile fullchain.pem \
+    --ssl-keyfile privkey.pem \
     --reload \
     --workers 1
